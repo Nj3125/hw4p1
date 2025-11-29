@@ -1,3 +1,13 @@
+/* 
+File: index.html 
+GUI Assignment: [HW4]
+Nicholas Johnson, UMass Lowell Computer Science, Nicholas_Johnson5@student.uml.edu 
+Copyright (c) 2025 by Nicholas Johnson.  All rights reserved.  May be freely copied or 
+excerpted for educational purposes with credit to the author. 
+updated by NJ on November 28, 2025 at 9:06 PM
+Template for header made by Wenjin Zhou and provided in the HW1 pdf.
+*/
+
 $(document).ready(function () {
     // Custom error rules:
     // Whole number only.

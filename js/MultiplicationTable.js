@@ -1,5 +1,5 @@
 /* 
-File: index.html 
+File: MultiplicationTable.js
 GUI Assignment: [HW4]
 Nicholas Johnson, UMass Lowell Computer Science, Nicholas_Johnson5@student.uml.edu 
 Copyright (c) 2025 by Nicholas Johnson.  All rights reserved.  May be freely copied or 

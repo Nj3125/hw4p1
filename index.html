@@ -1,0 +1,69 @@
+<!-- 
+File: index.html 
+GUI Assignment:  Multiplication Table with JS [HW1]
+Nicholas Johnson, UMass Lowell Computer Science, Nicholas_Johnson5@student.uml.edu 
+Copyright (c) 2025 by Nicholas Johnson.  All rights reserved.  May be freely copied or 
+excerpted for educational purposes with credit to the author. 
+updated by NJ on October 26, 2025 at 1:57 AM
+Template for header made by Wenjin Zhou and provided in the HW1 pdf.
+--> 
+
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Multiplication Table</title>
+
+
+            <linK rel="stylesheet" href="css/style.css">
+        </head>
+        <body>
+            <!---Container for the entire page-->
+            <div class="container">
+                <!---Title Box-->
+                <div id="title">
+                    <h1>MULTIPLICATION-TABLE</h1>
+                    <!---Input fields & button-->
+                    <form id="form">
+                        <div class="inputs">
+                            <!---Input for rows-->
+                            <div class="rows">
+                                <label>Min Rows:</label>
+                                <input type="number" id="minrow" name="minrow" value="1" min="-50" max="50">
+                                <label>Max Rows:</label>
+                                <input type="number" id="maxrow" name="maxrow" value="10" min="-50" max="50">
+                            </div>
+                            <!---Input for columns-->
+                            <div class="cols">
+                                <label>Min Columns:</label>
+                                <input type="number" id="mincol" name="mincol" value="1" min="-50" max="50">
+                                <label>Max Columns:</label>
+                                <input type="number" id="maxcol" name="maxcol" value="10" min="-50" max="50">
+                            </div>
+                            <!---Generate button-->
+                            <div class="buttons">
+                                <button id="generate" type="submit">Generate</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!---Body container (not the same as regular body, which is the entire page)-->
+                <div class="body">
+                    <!---List of requirements that must be met to produce valid output-->
+                    <p>This website will generate any multiplication table, so long as:</p>
+                    <ul id="conditions">
+                        <li id="in-range">&minus;50 &le; Row &amp; Column Size &le; 50</li>
+                        <li id="max-over-min">Maximum &ge; Minimum</li>
+                        <li id="whole-number">All inputs are whole numbers</li>
+                        <li id="is-number">All inputs are numbers</li>
+                    </ul>
+                    <!---Where the JS script adds the table cells-->
+                    <div id="mult-table"></div>
+                </div>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+            <!---JS Script for multiplication table-->
+            <script src="js/MultiplicationTable.js"></script>
+        </body>
+    </html>
